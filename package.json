@@ -1,0 +1,25 @@
+{
+  "name": "steamer-task-alloyteam",
+  "version": "1.0.0",
+  "description": "steamer task for alloyteam",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steamerjs/steamer-task-alloyteam.git"
+  },
+  "keywords": [
+    "steamer",
+    "task",
+    "alloyteam"
+  ],
+  "author": "heyli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steamerjs/steamer-task-alloyteam/issues"
+  },
+  "homepage": "https://github.com/steamerjs/steamer-task-alloyteam#readme"
+}
