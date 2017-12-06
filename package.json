@@ -5,6 +5,7 @@
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
+    "dist": "echo '123'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
