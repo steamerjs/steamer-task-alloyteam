@@ -23,5 +23,7 @@
   "bugs": {
     "url": "https://github.com/steamerjs/steamer-task-alloyteam/issues"
   },
-  "homepage": "https://github.com/steamerjs/steamer-task-alloyteam#readme"
+  "homepage": "https://github.com/steamerjs/steamer-task-alloyteam#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
