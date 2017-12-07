@@ -2,8 +2,13 @@ let dev = [
         'npm start'
     ],
     dist = [
+        'npm run lint',
         'npm run dist',
-        'steamer jb --run'
+        'git add --all',
+        'git-commit.js',
+        'git-pull.js',
+        'git-push.js',
+        'steamer jb --run',
     ];
 
 module.exports = {
