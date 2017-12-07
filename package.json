@@ -5,6 +5,7 @@
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
+    "lint": "echo no lint",
     "dist": "echo 'start to update'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
