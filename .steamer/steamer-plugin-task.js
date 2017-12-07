@@ -6,9 +6,9 @@ let dev = [
         'npm run dist',
         'git add --all',
         'git-commit.js',
-        'git-pull.js',
-        'git-push.js',
-        'steamer jb --run',
+        // 'git-pull.js',
+        // 'git-push.js',
+        // 'steamer jb --run',
     ];
 
 module.exports = {
