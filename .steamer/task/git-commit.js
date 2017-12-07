@@ -29,7 +29,7 @@ module.exports = function(ctx, next) {
             let prompt = ctx.inquirer.createPromptModule();
             prompt(questions).then((answers) => {
         
-                jbConfig.config.git.master = answers.jb;
+                jbConfig.config.git[ctx.currentBranch] = answers.jb;
                 ctx.fs.writeFileSync(path.join(process.cwd(), '.steamer/steamer-plugin-jb.js'), `module.exports = ${JSON.stringify(jbConfig, null, 4)};`, 'utf-8');
         
                 ctx.git(process.cwd())
