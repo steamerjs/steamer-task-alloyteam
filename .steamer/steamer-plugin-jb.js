@@ -2,7 +2,7 @@ module.exports = {
     "plugin": "steamer-plugin-jb",
     "config": {
         "git": {
-            "master": ""
+            "master": "R123"
         }
     }
 };
