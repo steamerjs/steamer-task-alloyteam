@@ -13,7 +13,7 @@ module.exports = function(ctx, next) {
             err && ctx.error(err);
             ctx.currentBranch = branches.current;
         })
-        .commit(`heyli - ${answers.msg}`, (err) => {
+        .commit(`${answers.msg}`, (err) => {
             err && ctx.error(err);
             !err && next();
         });
