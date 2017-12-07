@@ -10,13 +10,7 @@ steamer task s
 steamer task start
 
 // 任务包括
-npm run lint => 代码link
-npm run dist => 脚手架编译
-git add --all => git 添加所有更新文件
-node git-commit.js => git commit
-node git-pull.js => git pull
-node git.push.js => git push
-steamer jb --run => 将代码部署到捷豹平台
+npm run start
 ```
 
 
@@ -25,4 +19,13 @@ steamer jb --run => 将代码部署到捷豹平台
 steamer task d
 // 或
 steamer task dist
+
+// 任务包括
+npm run lint => 代码link
+npm run dist => 脚手架编译
+git add --all => git 添加所有更新文件
+node git-commit.js => git commit
+node git-pull.js => git pull
+node git.push.js => git push
+steamer jb --run => 将代码部署到捷豹平台
 ```
