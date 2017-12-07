@@ -1,13 +1,21 @@
 
 
 module.exports = function(ctx, next) {
-    ctx.git(process.cwd())
+    let prompt = ctx.inquirer.createPromptModule();
+    prompt([{
+        type: 'text',
+        message: 'Input your git commit  message',
+        name: 'msg',
+        default: 'update',
+    }]).then((answers) => {
+        ctx.git(process.cwd())
         .branchLocal((err, branches) => {
             err && ctx.error(err);
             ctx.currentBranch = branches.current;
         })
-        .commit('update', (err) => {
+        .commit(`heyli - ${answers.msg}`, (err) => {
             err && ctx.error(err);
             !err && next();
         });
+    });
 };
