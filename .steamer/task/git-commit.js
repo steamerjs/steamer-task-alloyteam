@@ -25,7 +25,7 @@ module.exports = function(ctx, next) {
     prompt(questions).then((answers) => {
 
         jbConfig.config.git.master = answers.jb;
-        ctx.fs.writeFileSync(path.join(process.cwd(), '.steamer/steamer-plugin-jb.js'), JSON.stringify(jbConfig, null, 4), 'utf-8');
+        ctx.fs.writeFileSync(path.join(process.cwd(), '.steamer/steamer-plugin-jb.js'), `module.exports = ${JSON.stringify(jbConfig, null, 4)};`, 'utf-8');
 
         ctx.git(process.cwd())
             .branchLocal((err, branches) => {
